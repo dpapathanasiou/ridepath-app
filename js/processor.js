@@ -1,3 +1,5 @@
+const picker = document.getElementById('departFrom');
+
 var trains = [];
 
 function activeStations() {
@@ -110,12 +112,11 @@ function parseResult(result) {
         let station = result.consideredStation;
         result.destinations.forEach(dest => {
             if (dest.hasOwnProperty('label') && dest.hasOwnProperty('messages')) {
-                let direction = dest.label;
                 dest.messages.forEach(message => {
                     if (message.hasOwnProperty('lineColor') && message.hasOwnProperty('arrivalTimeMessage') && message.hasOwnProperty('lastUpdated')) {
                         trains.push({
                             station: station,
-                            direction: direction,
+                            direction: dest.label,
                             line: message.lineColor,
                             arriving: message.arrivalTimeMessage,
                             updated: parseDate(message.lastUpdated)
@@ -164,8 +165,6 @@ async function loadActiveTrains(isLoad, selection) {
         console.error(error.message);
     }
 }
-
-const picker = document.getElementById('departFrom');
 
 picker.addEventListener("change", (event) => {
     event.preventDefault();
