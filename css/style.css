@@ -1,0 +1,25 @@
+fieldset {
+    max-width: 30%;
+}
+
+table {
+    max-width: 60%;
+    border: 0;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    padding: 0.25em;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #FAFA33;
+}
+
+.arrow {
+    color: #ABB2B9;
+}

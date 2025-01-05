@@ -20,7 +20,7 @@ function getStationName(id) {
     return stations.has(id) ? stations.get(id) : id;
 }
 
-const routes = Object.create(null, {
+const routes = {
     ToNJ: [
         { line: "D93A30", sign: "Newark", stops: ["WTC", "EXP", "GRV", "JSQ", "HAR", "NWK"] },
         { line: "FF9900", sign: "Journal Square", stops: ["33S", "23S", "14S", "09S", "CHR", "NEW", "GRV", "JSQ"] },
@@ -35,5 +35,5 @@ const routes = Object.create(null, {
         { line: "65C100", sign: "World Trade Center", stops: ["HOB", "NEW", "EXP", "WTC"] },
         { line: "4D92FB,FF9900", sign: "33rd Street via Hoboken", stops: ["JSQ", "GRV", "NEW", "HOB", "CHR", "09S", "14S", "23S", "33S"] }
     ]
-});
+};
 
