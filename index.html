@@ -1,26 +1,39 @@
 <!doctype html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ride PATH</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <h1>Ride PATH</h1>
-    <form>
-      <fieldset>
-        <legend>Choose your departure station</legend>
-        <p>
-          <label for="departFrom" class="form-label">Station</label>
-          <select id="departFrom" class="form-select">
-            <option value="" selected="selected">(choose)</option>
-          </select>
-        </p>
-      </fieldset>
-    </form>
-    <div id="results" style="padding-left: 1em"></div>
-    <script src="/js/network.js" defer></script>
-    <script src="/js/processor.js" defer></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ride PATH</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+  <h1>Ride PATH</h1>
+  <form>
+    <fieldset>
+      <legend>Choose your departure station</legend>
+      <p>
+        <label for="departFrom" class="form-label">Station</label>
+        <select id="departFrom" class="form-select">
+          <option value="" selected="selected">(choose)</option>
+        </select>
+      </p>
+    </fieldset>
+  </form>
+  <div id="results" style="padding-left: 1em"></div>
+  <script src="/js/network.js" defer></script>
+  <script src="/js/processor.js" defer></script>
+
+  <footer>
+    <p style="padding: 2em">
+      <small>
+        <a href="http://github.com/dpapathanasiou/ridepath-app/issues">Issues</a> | 
+        <a href="http://github.com/dpapathanasiou/ridepath-app#contribute">Contribute</a> | 
+        <a href="http://github.com/dpapathanasiou/ridepath-app/">Source Code</a>
+      </small>
+    </p>
+  </footer>
+</body>
+
 </html>
