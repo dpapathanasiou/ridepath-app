@@ -2,6 +2,8 @@
 
 This web app uses the real time [json format](https://www.json.org/) feed from the [Port Authority Trans-Hudson (PATH)](https://www.panynj.gov/path/en/index.html) rail system to produce a view of when the next trains are arriving per station.
 
+![Screenshot 2025-01-11 at 10 02 54 AM](https://github.com/user-attachments/assets/9ffde3c6-3282-4181-ae4d-8e54659b0113)
+
 It is an experiment in minimalism, in that it was built without any specialized development frameworks, relying solely on standard [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [css](https://developer.mozilla.org/en-US/docs/Web/CSS) capabilities instead.
 
 # Architecture &amp; Design
