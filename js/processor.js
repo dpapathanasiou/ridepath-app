@@ -100,8 +100,8 @@ function formatParsedResult(result) {
                 html.push(`<td>${colorDot(route.line)}</td>`);
                 html.push(`<td>${route.sign}</td>`);
                 html.push(`<td style="text-align: right">${result.arriving}</td>`);
-                html.push(`<td><span class="arrow">next -> </span>${getStationName(next)}</td>`);
-                html.push(`<td><span class="arrow">last => </span>${getStationName(last)}</td>`);
+                html.push(`<td><span class="arrow"> -> </span>${getStationName(next)}</td>`);
+                html.push(`<td><span class="arrow"> => </span>${getStationName(last)}</td>`);
             });
     }
     return html.join('');
