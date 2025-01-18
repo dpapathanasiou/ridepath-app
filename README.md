@@ -6,6 +6,8 @@ This web app uses the real time [json format](https://www.json.org/) feed from t
 
 It is an experiment in minimalism, in that it was built without any specialized development frameworks, relying solely on standard [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) and [css](https://developer.mozilla.org/en-US/docs/Web/CSS) capabilities instead.
 
+For an even simpler version of the same idea, see this [terminal one-liner](https://gist.github.com/dpapathanasiou/5cf6423dec4fdeb84edaaf8f9ac6ec11) gist.
+
 # Architecture &amp; Design
 
 The app retrieves the PATH feed at `https://www.panynj.gov/bin/portauthority/ridepath.json` and flattens the results into a list of active trains per station.
